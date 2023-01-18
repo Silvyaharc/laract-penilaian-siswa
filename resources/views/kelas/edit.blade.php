@@ -17,3 +17,20 @@
                         @foreach ($jurusan as $j)
                         @if ($kelas->jurusan_id == $j->id)
                         <option value="{{ $j->id }}" selected>{{ $j->nama_jurusan }}</option>
+                        @else 
+                        <option value="{{ $j->id }}">{{ $j->nama_jurusan }}</option>
+                        @endif
+                        @endforeach 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center><button class="button-primary" type="submit">UBAH</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+@endsection 
+                    

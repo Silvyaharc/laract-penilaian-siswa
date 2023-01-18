@@ -24,7 +24,7 @@
                 <td>{{ $k->nama_kelas }}</td>
                 <td>{{ $k->jurusan->nama_jurusan }}</td>
                 <td>
-                <a href="/kelas/edit{{ $k->id }}" class="button-warning">EDIT</a>
+                <a href="/kelas/edit/{{ $k->id }}" class="button-warning">EDIT</a>
                 <a href="/kelas/destroy/{{ $k->id }}" onclick="return confirm('Yakin Hapus?')" class="button-danger">HAPUS</a>
                 </td>
             </tr>
